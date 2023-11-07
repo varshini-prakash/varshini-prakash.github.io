@@ -1,3 +1,3 @@
-# Safinah Ali, Interaction Designer
+## Varshini Prakash
 
-## Portfolio
+### Portfolio
