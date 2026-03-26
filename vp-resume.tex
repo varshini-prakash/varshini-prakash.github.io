@@ -1,0 +1,370 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+%\sloppy   % reduces overfull hbox warnings on narrow lines
+%\usepackage{microtype}  % optional, nicer spacing (pdfLaTeX)
+\usepackage{ragged2e}
+\usepackage[normalem]{ulem}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE \scshape Varshini Prakash}
+\end{center}
+
+\begin{center}
+    
+
+\href{mailto:varshini.prakash@gmail.com}{\uline{varshini.prakash@gmail.com}} $|$
+\href{https://varshini-prakash.github.io}{\uline{varshini-prakash.github.io}} $|$ \href{https://www.linkedin.com/in/varshini-prakash/}{\uline{LinkedIn}} 
+\end{center}
+
+\section{Summary}
+%Machine Learning Engineer with a strong foundation in deep learning and transformer models. Experienced in building ML pipelines and deploying production-ready models using Python, PyTorch, and TensorFlow.
+\begin{justify}
+Machine Learning Engineer with a strong foundation in deep learning, transformer models, and applied AI systems. Experienced in building ML pipelines, experimentation workflows, and deploying production-ready models using Python, PyTorch, and TensorFlow.
+\end{justify}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MSc Computing Science}{University of Alberta, Canada}
+      {GPA 3.9, Thesis Advisor: Osmar Zaiane}{2024}
+      \resumeSubheading
+      {Bachelor of Technology in Computer Science}{VIT University, Vellore, India}{GPA: 9.26 / 10.0}{2020}
+  \resumeSubHeadingListEnd
+
+%-----------Experience-----------
+\section{Experience}
+\begin{justify}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mood Disorders Society of Canada}{2024 -- 2026}
+      {Machine Learning Engineer}{Edmonton, Canada}
+
+\resumeItemListStart
+
+        \resumeItem{Designed and deployed \textbf{MIRA}, a mental health assistant combining Retrieval-Augmented Generation \textbf{(RAG)} with transformer embeddings and scalable inference to deliver context-aware resource recommendations.}
+        \resumeItem{Shipped \textbf{layered safety guardrails}: toxic-content detection, structured refusal paths, fallbacks, and conversational constraints for sensitive-domain use.}
+        \resumeItem{Built \textbf{data ingestion and serving workflows} for retrieval, embedding generation, and production inference; standardized release practices for model and index updates.}
+        \resumeItem{Ran an \textbf{offline evaluation harness} using curated query sets and systematic sweeps over similarity thresholds, retrieval parameters, and prompt templates, to iteratively refine response quality.}
+        \resumeItem{Maintained legacy \textbf{Rasa}-based MIRA; integrated \textbf{DIET} (Dual Intent and Entity Transformer) to strengthen intent recognition and entity extraction in rule-driven flows.}
+        \resumeItem{Extended the domain \textbf{knowledge graph} with representation learning and link prediction, improving coverage for semantic retrieval and downstream recommendations.}
+
+\resumeItemListEnd
+ 
+        \resumeSubheading
+      {University of Alberta}{2021 -- 2024}
+      %{Sept. 2021 -- Present}
+      {Graduate Research Assistant Fellow}{Edmonton, Canada}
+      \resumeItemListStart
+
+\resumeItem{With Dr.\ Osmar Zaiane, built a \textbf{no-code chatbot builder} enabling configurable dialogue workflows; implemented graph-based flow visualization and dynamic routing for scalable, deployable conversational systems.}
+\resumeItem{With Dr.\ Alona Fyshe, developed a \textbf{neural decoding pipeline} using transformer embeddings (BERT, RoBERTa) to study metaphor processing in fMRI data; evaluated alignment between brain activation patterns and contextualized semantic embeddings using similarity and correlation metrics.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Cognitive Systems Lab}{2019}
+%{Sept. 2021 -- Present}
+{Summer Research Intern}{Bremen, Germany}
+\resumeItemListStart
+\resumeItem{Collaborated with Prof. Tanja Schultz to train an EMG-Speech system for Silent Speech, to align lip-reading data from images with phonemes of corresponding EMG signals using 3D Convolutional Neural Networks (CNNs).}
+\resumeItemListEnd
+
+\resumeSubheading
+{One Fourth Labs, IIT Madras}{2018}
+{Content Development Intern}
+{Chennai, India}
+\resumeItemListStart
+\resumeItem{Authored hands-on Deep Learning coursework and programming assignments aligned to industry practices, with Dr. Mitesh Khapra and Dr. Pratyush Kumar.}
+\resumeItemListEnd
+
+        %{Designed programming assignments for an online course on Deep Learning. Collaborated with Dr Mitesh Khapra and Dr Pratyush Kumar to ensure content aligned with industry-relevant ML practices.}
+
+            \resumeSubheading
+        {Siam Computing}{2018}
+        {Chatbot Developer}
+        {Chennai, India}
+        \resumeItemListStart
+        \resumeItem{Designed a conversational chatbot using Google Dialogflow for a retail enterprise, enabling context-aware responses and handling multi-turn dialogues to enhance customer interaction efficiency.}
+
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\end{justify}
+
+
+%-----------Extracurriculars-----------
+\iffalse
+\section{Publications and Posters}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {{\bf Prakash, V.}, Chouinard, B., \& Fyshe, A. (2023). Decoding Neural Representations of Sentences in Individuals with Autism. Poster presented at the Reverse Expo, University of Alberta.}
+    \resumeSubheading
+    {{\bf Prakash, V.}, Moorthy, K., \& Jose, J. T., (2020). Enhancing Predictability of Handwritten Document Content using HTR and Word Substitution. IJISME. }
+    \resumeSubheading
+    {{\bf Prakash, V.}, \& Tripathy, B. K. (2020). Recent Advancements in Automatic Sign Language Recognition (SLR). In {\em Computational Intelligence for Human Action Recognition} (pp. 1-24). Chapman and Hall/CRC. }
+
+
+  \resumeSubHeadingListEnd
+  \fi
+
+
+
+%-----------Publications-----------
+\section{Publications and Posters}
+\begin{justify}
+\resumeItemListStart
+
+\resumeItem{
+{\bf Prakash, V.}, Ali Gharaat, M., Lambe Foster, A., Merrick, D., Desnoyers, E., Noble, J. M., \& Zaiane, O. R. (2025).
+\textit{Mental Health Resource Retrieval Using Semantic Similarity and Knowledge Graphs.}
+International Conference on Digital Economy (pp. 89--98).
+{\bf Outstanding Paper Award.}
+}
+\resumeItem{
+{\bf Prakash, V.}, Foster, A. L., Noble, J., \& Zaiane, O. (2024).
+\textit{Integrating Conversational Pathways with a Chatbot Builder Platform.}
+Information Integration and Web Intelligence: 26th International Conference.
+}
+\resumeItem{
+{\bf Prakash, V.}, Chouinard, B., \& Fyshe, A. (2023).
+\textit{Decoding Neural Representations of Sentences in Individuals with Autism.}
+Poster presented at the Reverse Expo, University of Alberta.
+}
+\resumeItem{
+{\bf Prakash, V.}, \& Tripathy, B. K. (2020).
+\textit{Recent Advancements in Automatic Sign Language Recognition (SLR).}
+In \textit{Computational Intelligence for Human Action Recognition} (pp. 1--24).
+}
+
+\resumeItemListEnd
+
+\end{justify} 
+
+
+\iffalse
+\noindent
+{\bf Prakash, V.}, Moorthy, K., \& Jose, J. T. (2020). Enhancing Predictability of Handwritten Document Content using HTR and Word Substitution. {\em IJISME}. 
+
+\vspace{0.5em}
+\fi
+
+
+
+
+
+
+
+
+\iffalse
+%-----------Courses-----------
+\section{Classes}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \vspace{1mm}
+     \textbf{Courses}{: AP Calulus BC, AP Chemistry, AP Physics, AP World History, AP U.S. History, AP Statistics, AP Literature} \\
+
+    }}
+ \end{itemize}
+ \fi
+
+
+
+\section{Awards}
+\begin{justify}
+\resumeItemListStart
+\resumeItem{Outstanding Paper Award at International Conference on Digital Economy (ICDEc) 2025.}
+\resumeItem{Certificate of Accomplishment for 16th Annual Student Unmanned Air Systems Competition. }
+\resumeItem{Certificate of Appreciation for oral presentation on Data Security for IoT-Based Healthcare System - A cryptographic approach, ICWRS \& ICAFEE 2018.} 
+\resumeItem{Recipient of the Special Student Achiever Award from VIT University Vellore (2018-2020).}
+\resumeItem{Finalist in HSBC Artificial Intelligence Hackathon conducted by HSBC and IIT Madras.}
+\resumeItemListEnd
+\end{justify}
+%-----------Skills-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Programming:} Python, C++, SQL \\
+    \textbf{ML/DL:} PyTorch, TensorFlow, HuggingFace Transformers, Scikit-learn, NLP \\
+    \textbf{LLM Systems:} RAG pipelines, Vector Search, Model Context Protocol (MCP), Prompt Engineering \\
+    \textbf{Data \& Scientific Tools:} NumPy, Pandas, Jupyter Notebooks, Conda \\
+    \textbf{Systems \& Deployment:} GPU/CUDA environments, Docker, Git, REST APIs, Linux \\
+    \textbf{Graph ML:} Knowledge Graphs, GNNs, Representation Learning, Semantic Search
+    }}
+\end{itemize}
+
+\section{Selected Projects}
+\begin{justify}
+
+\iffalse
+\resumeSubheading{MIRA Mental Health Chatbot}{2024}{}{} \vspace{-0.75em}
+\resumeItemListStart
+\resumeItem{\textbf{Safety} — Added layered safety guardrails, including persona-specific prompt constraints, structured refusal logic, and a QwenGuard classifier to detect unsafe or self-harm content before responses reach users.}
+
+\resumeItem{\textbf{Explainability} — Designed and implemented a real-time context feature that dynamically highlights key entities and semantic concepts from conversations, allowing users to trace model reasoning and improving AI transparency.}
+
+\resumeItemListEnd
+\fi
+
+\resumeSubheading{Multimodal Speech Recognition System} {2025}{}{} \vspace{-0.75em} 
+\resumeItemListStart
+\resumeItem{Built an end-to-end audio-visual speech recognition system in PyTorch on GRID using a ResNet-18 lip encoder, mel-spectrogram CNN, gated multimodal fusion (temporal alignment + learned gates), and a CTC-trained BiGRU decoder.}\vspace{-1.35em} \resumeItem{Evaluated WER/CER on speaker-held-out splits with audio/video ablations and noisy-audio stress tests; shipped a reproducible training/eval pipeline with checkpointing, TensorBoard logging, and CTC beam search.}
+\resumeItemListEnd
+
+\resumeSubheading{Noise Eliminator for Active Learning}{2021}{}{} \vspace{-0.75em}
+\resumeItemListStart \resumeItem{An interactive machine learning-based algorithm that helps produce automated systems that provide highly accurate predictions, with a low number of training instances.}    \resumeItemListEnd
+
+\resumeSubheading{Stock Forecasting}{2021}{}{} \vspace{-0.75em}
+\resumeItemListStart \resumeItem{Developed a stock forecasting model framed as a binary classification task to identify profitable stocks. Trained several classifiers on historical data and leveraged their predictions to build portfolios that surpass benchmark performance.}    \resumeItemListEnd
+
+
+\resumeSubheading{Unmanned Aerial System}{2019}{}{} \vspace{-0.95em}
+
+\resumeItemListStart
+\resumeItem{Competed in AUVSI SUAS 2018 (Maryland, USA) as team Ardra; integrated and field-demonstrated a full unmanned aerial system (UAS) for autonomous mission execution.}\vspace{-0.3em}
+\resumeItem{Developed interoperability modules and real-time obstacle visualization to support navigation, system coordination, and mission awareness.}
+\resumeItemListEnd
+
+\end{justify}
+
+\iffalse
+\section{Community Involvement}
+
+
+\resumeSubheading{Unit Leader}{2024-Present}{Girl Guides of Canada}{} \vspace{0.5em}
+\resumeItemListStart {Mentor and lead a group of girls through weekly Girl Guides programs that foster leadership, teamwork, and skill-building. Organize outdoor activities, community service, and badge-based learning experiences.}
+\resumeItemListEnd
+
+\resumeSubheading{CSGSA Treasurer}{2021-2022}{Computing Science Graduate Students' Association}{University of Alberta} \vspace{0.5em}
+\resumeItemListStart {Oversaw CSGSA finances, including budgeting, expense tracking, and reporting. Collaborated with student leadership to fund social, and professional development events for the graduate student community.}
+\resumeItemListEnd
+
+
+
+\resumeSubheading{GSA Equity, Diversity, and Inclusion Committee Member}{2021-2022}{Graduate Students' Association}{University of Alberta} \vspace{0.5em}
+\resumeItemListStart {Contributed to initiatives that advance Equity, Diversity, and Inclusion (EDI) within the GSA, promoting a welcoming and inclusive community that enhances the graduate student experience on campus.}
+\resumeItemListEnd
+\fi
+
+\iffalse
+  \resumeItemListStart  
+    \resumeItem{Built and deployed a production-grade RAG-based mental health assistant using transformer embeddings and vector search, improving resource retrieval accuracy.} 
+
+    \resumeItem{Optimized a handcrafted knowledge graph using deep learning models to predict missing links, refine structure, and generate embeddings to improve RAG.}
+    
+    \resumeItem{Developed and maintained MIRA, an AI mental health assistant, using the Rasa framework and transformer-based models for intent and entity detection.}  
+     
+    \resumeItem{Implemented scalable data pipelines and retrieval systems to improve resource recommendation accuracy, using embeddings and vector search.}  
+
+    \resumeItem{Optimized chatbot performance through prompt engineering, similarity threshold tuning, and iterative evaluation, improving response relevance and user engagement metrics.}
+
+    \resumeItem{Implemented and experimented with state-of-the-art safety guardrails, including toxic content detection, fallback mechanisms, and conversational constraints, to ensure responsible AI interactions in sensitive mental health contexts.}
+
+    \resumeItemListEnd 
+
+    \fi
+
+\end{document}
